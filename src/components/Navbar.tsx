@@ -1,30 +1,30 @@
 import { Menu, MenuProps } from 'antd';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { WebPath } from '../constants/PathConstant.tsx';
+import { WEB_PATH } from '../constants/PathConstant.tsx';
 
 type MenuItem = Required<MenuProps>['items'][number];
 
 const items: MenuItem[] = [
   {
-    key: WebPath.HOME,
-    label: <Link to={WebPath.HOME}>Home</Link>,
+    key: WEB_PATH.HOME,
+    label: <Link to={WEB_PATH.HOME}>Home</Link>,
   },
   {
-    key: WebPath.SYNTH,
-    label: <Link to={WebPath.SYNTH}>Synthesizer</Link>,
+    key: WEB_PATH.SYNTH,
+    label: <Link to={WEB_PATH.SYNTH}>Synthesizer</Link>,
   },
   {
-    key: WebPath.DEMO,
-    label: <Link to={WebPath.DEMO}>Demo</Link>,
+    key: WEB_PATH.DEMO,
+    label: <Link to={WEB_PATH.DEMO}>Demo</Link>,
   },
   {
-    key: WebPath.SURVEY,
-    label: <Link to={WebPath.SURVEY}>Survey</Link>,
+    key: WEB_PATH.SURVEY,
+    label: <Link to={WEB_PATH.SURVEY}>Survey</Link>,
   },
   {
-    key: WebPath.ABOUT,
-    label: <Link to={WebPath.ABOUT}>About</Link>,
+    key: WEB_PATH.ABOUT,
+    label: <Link to={WEB_PATH.ABOUT}>About</Link>,
   },
 ];
 

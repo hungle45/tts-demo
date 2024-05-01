@@ -1,14 +1,17 @@
-import Paragraph from 'antd/es/typography/Paragraph';
-import Title from 'antd/es/typography/Title';
+import { Divider } from 'antd';
 import ContentBody from '../../components/ContentBody.tsx';
+import PageTitle from '../../components/PageTitle.tsx';
+import Instruction from './Instruction.tsx';
+import MosForm from './MosForm.tsx';
 
 const SurveyPage: React.FC = () => {
   return (
     <>
-      <Title level={3}>Survey</Title>
-
+      <PageTitle title="MOS experiments" subTitle="Synthetic speech quality assessment" />
+      <Divider style={{ marginTop: 0, marginBottom: 16 }} />
+      <Instruction />
       <ContentBody>
-        <Paragraph>Coming soon...</Paragraph>
+        <MosForm />
       </ContentBody>
     </>
   );

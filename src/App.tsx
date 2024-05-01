@@ -1,5 +1,5 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import { BasePath, WebPath } from './constants/PathConstant.tsx';
+import { BASE_PATH, WEB_PATH } from './constants/PathConstant.tsx';
 import HeaderContentFooterLayout from './layouts/HeaderContentFooterLayout.tsx';
 import AboutPage from './pages/about/index.tsx';
 import DemoPage from './pages/demo/index.tsx';
@@ -15,27 +15,27 @@ interface IPageProps {
 
 const PageConfig: IPageProps[] = [
   {
-    path: WebPath.SYNTH,
+    path: WEB_PATH.SYNTH,
     element: <SynthPage />,
     isAccessible: true,
   },
   {
-    path: WebPath.DEMO,
+    path: WEB_PATH.DEMO,
     element: <DemoPage />,
     isAccessible: true,
   },
   {
-    path: WebPath.SURVEY,
+    path: WEB_PATH.SURVEY,
     element: <SurveyPage />,
     isAccessible: true,
   },
   {
-    path: WebPath.ABOUT,
+    path: WEB_PATH.ABOUT,
     element: <AboutPage />,
     isAccessible: true,
   },
   {
-    path: WebPath.HOME,
+    path: WEB_PATH.HOME,
     element: <HomePage />,
     isAccessible: true,
   },
@@ -44,7 +44,7 @@ const PageConfig: IPageProps[] = [
 const App = () => {
   return (
     <>
-      <BrowserRouter basename={BasePath}>
+      <BrowserRouter basename={BASE_PATH}>
         <Routes>
           <Route element={<HeaderContentFooterLayout />}>
             {PageConfig.map((page, index) =>

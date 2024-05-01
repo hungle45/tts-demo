@@ -1,6 +1,6 @@
-export const BasePath = '/tts-demo';
+export const BASE_PATH = '/tts-demo';
 
-export const WebPath = {
+export const WEB_PATH = {
   HOME: '/',
   SYNTH: '/synth',
   DEMO: '/demo',

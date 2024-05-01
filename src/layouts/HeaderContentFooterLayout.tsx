@@ -8,7 +8,9 @@ const HeaderContentFooterLayout: React.FC = () => {
       <Header style={{ display: 'flex', alignItems: 'center' }}>
         <NavBar />
       </Header>
-      <Content style={{ padding: '0 48px' }}>
+      <Content
+        style={{ margin: '0 auto', padding: '0 48px', width: '100%', maxWidth: '1200px' }}
+      >
         <Outlet />
       </Content>
       <Footer style={{ textAlign: 'center' }}>
