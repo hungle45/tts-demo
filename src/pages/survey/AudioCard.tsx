@@ -13,10 +13,10 @@ const AudioCard: React.FC<{ audioKey: number; audio: AudioType }> = ({
       size="small"
       title={`Audio ${audioKey + 1}`}
       key={audioKey}
-      style={{ marginBottom: 24 }}
+      type="inner"
+      style={{ marginBottom: 24, boxShadow: '1px 1px 8px 4px rgba(208, 216, 243, 0.4)' }}
     >
-      <Text italic>{audio.transcript}</Text>
-
+      Transcript: <Text italic>{audio.transcript}</Text>
       <audio
         controls
         src={audio.src}
@@ -27,7 +27,6 @@ const AudioCard: React.FC<{ audioKey: number; audio: AudioType }> = ({
           marginBottom: 6,
         }}
       />
-
       <Form.Item
         name={['rating', audioKey]}
         rules={[{ required: true, message: 'Please rate the quality of the speech' }]}
