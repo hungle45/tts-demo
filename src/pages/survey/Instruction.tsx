@@ -5,7 +5,7 @@ import { useState } from 'react';
 const { Text } = Typography;
 
 const Instruction: React.FC = () => {
-  const [language, setLanguage] = useState('en');
+  const [language, setLanguage] = useState('vn');
 
   return (
     <Paragraph>
