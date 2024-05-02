@@ -1,18 +1,18 @@
-import dgspeech1 from '../assets/audios/dgspeech/1.wav';
-import dgspeech2 from '../assets/audios/dgspeech/2.wav';
-import dgspeech3 from '../assets/audios/dgspeech/3.wav';
-import dgspeech4 from '../assets/audios/dgspeech/4.wav';
-import dgspeech5 from '../assets/audios/dgspeech/5.wav';
-import dgspeech6 from '../assets/audios/dgspeech/6.wav';
+import dgspeech1 from '../assets/survey_audios/dgspeech/1.wav';
+import dgspeech2 from '../assets/survey_audios/dgspeech/2.wav';
+import dgspeech3 from '../assets/survey_audios/dgspeech/3.wav';
+import dgspeech4 from '../assets/survey_audios/dgspeech/4.wav';
+import dgspeech5 from '../assets/survey_audios/dgspeech/5.wav';
+import dgspeech6 from '../assets/survey_audios/dgspeech/6.wav';
 
-import groundtruth1 from '../assets/audios/groundtruth/1.wav';
-import groundtruth2 from '../assets/audios/groundtruth/2.wav';
-import groundtruth3 from '../assets/audios/groundtruth/3.wav';
-import groundtruth4 from '../assets/audios/groundtruth/4.wav';
-import groundtruth5 from '../assets/audios/groundtruth/5.wav';
-import groundtruth6 from '../assets/audios/groundtruth/6.wav';
+import groundtruth1 from '../assets/survey_audios/groundtruth/1.wav';
+import groundtruth2 from '../assets/survey_audios/groundtruth/2.wav';
+import groundtruth3 from '../assets/survey_audios/groundtruth/3.wav';
+import groundtruth4 from '../assets/survey_audios/groundtruth/4.wav';
+import groundtruth5 from '../assets/survey_audios/groundtruth/5.wav';
+import groundtruth6 from '../assets/survey_audios/groundtruth/6.wav';
 
-interface AudioAssets {
+interface SurveyAudioAssets {
   [model: string]: {
     [name: string]: {
       src: string;
@@ -21,7 +21,7 @@ interface AudioAssets {
   };
 }
 
-export const audioAssets: AudioAssets = {
+export const surveyAudioAssets: SurveyAudioAssets = {
   dgspeech: {
     '1.wav': {
       src: dgspeech1,

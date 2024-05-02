@@ -1,6 +1,16 @@
-import { Button, Form, FormProps, Input, Modal, Space, Spin, Typography } from 'antd';
+import {
+  Button,
+  Form,
+  FormProps,
+  Input,
+  Modal,
+  notification,
+  Space,
+  Spin,
+  Typography,
+} from 'antd';
 import { useState } from 'react';
-import { audioAssets } from '../../assets/assets.tsx';
+import { surveyAudioAssets } from '../../assets/surveyAssets.tsx';
 import {
   APP_SCRIPT_URL,
   AUDIO_NAME_DELIMITER,
@@ -24,8 +34,8 @@ const getAudioKey = (
 const mapAudioAssets = () => {
   const audioMap: AudioMapType = {};
 
-  for (const model in audioAssets) {
-    const audioFiles = audioAssets[model];
+  for (const model in surveyAudioAssets) {
+    const audioFiles = surveyAudioAssets[model];
     const audioKeys = Object.keys(audioFiles);
 
     getRandomElements(audioKeys, AUDIO_PER_MODEL).forEach((audioKey) => {
@@ -41,6 +51,7 @@ const MosForm: React.FC = () => {
   const audioMap = mapAudioAssets();
   const randomAudioKeys = shuffleArray(Object.keys(audioMap));
 
+  const [api, contextHolder] = notification.useNotification();
   const [formDisabled, setFormDisabled] = useState<boolean>(false);
   const [spinning, setSpinning] = useState<boolean>(false);
 
@@ -106,10 +117,15 @@ const MosForm: React.FC = () => {
 
   const onFinishFailed: FormProps['onFinishFailed'] = (errorInfo) => {
     console.log('Failed:', errorInfo);
+    api.error({
+      message: 'Form submission failed',
+      description: 'Please make sure you have filled in all the required fields.',
+    });
   };
 
   return (
     <>
+      {contextHolder}
       <Form
         name="basic"
         layout="vertical"
