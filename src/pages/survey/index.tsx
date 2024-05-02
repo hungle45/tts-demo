@@ -13,8 +13,8 @@ const SurveyPage: React.FC = () => {
         <Title level={4} style={{ textAlign: 'center' }}>
           MOS Survey
         </Title>
-        <Divider style={{ marginTop: 0, marginBottom: 16 }} />
         <Instruction />
+        <Divider style={{ marginTop: 0, marginBottom: 16 }} />
         <MosForm />
       </ContentBody>
     </>
