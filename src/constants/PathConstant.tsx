@@ -5,5 +5,4 @@ export const WEB_PATH = {
   SYNTH: '/synth',
   DEMO: '/demo',
   SURVEY: '/survey',
-  ABOUT: '/about',
 };

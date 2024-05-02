@@ -22,10 +22,6 @@ const items: MenuItem[] = [
     key: WEB_PATH.SURVEY,
     label: <Link to={WEB_PATH.SURVEY}>Survey</Link>,
   },
-  {
-    key: WEB_PATH.ABOUT,
-    label: <Link to={WEB_PATH.ABOUT}>About</Link>,
-  },
 ];
 
 const NavBar = () => {
