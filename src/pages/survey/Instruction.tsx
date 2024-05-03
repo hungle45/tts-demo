@@ -29,7 +29,7 @@ const Instruction: React.FC = () => {
             ratings based on the quality of the audio.
           </Paragraph>
           <Paragraph>
-            <Text mark>
+            <Text>
               Just select the number that best reflects your impression of each sample.
             </Text>
             <ul>
@@ -51,12 +51,10 @@ const Instruction: React.FC = () => {
             </ul>
           </Paragraph>
           <Paragraph>
-            <Text strong>Note:</Text>
-            <ul>
-              <li>The submission may take a few seconds to process.</li>
-              <li>Stay on this page while doing the experiment.</li>
-              <li>Use headphones for a better listening experience.</li>
-            </ul>
+            <Text strong type="danger">
+              Note: The following question order is randomly rendered, please listen do
+              the survey again in case you have to reload this page!
+            </Text>
           </Paragraph>
         </Paragraph>
         <Paragraph hidden={language != 'vn'}>
@@ -69,9 +67,7 @@ const Instruction: React.FC = () => {
             lượng của từng đoạn âm thanh.
           </Paragraph>
           <Paragraph>
-            <Text mark>
-              Hãy chọn số điểm phản ánh cảm nhận của bạn về mỗi mẫu âm thanh
-            </Text>
+            <Text>Hãy chọn số điểm phản ánh cảm nhận của bạn về mỗi mẫu âm thanh</Text>
             <ul>
               <li>
                 <b>1 - Rất tệ</b>: Cực kỳ không tự nhiên và khó hiểu.
@@ -91,12 +87,10 @@ const Instruction: React.FC = () => {
             </ul>
           </Paragraph>
           <Paragraph>
-            <Text strong>Xin lưu ý:</Text>
-            <ul>
-              <li>Việc nộp kết quả có thể mất một chút thời gian để xử lý.</li>
-              <li>Vui lòng không rời khỏi trang này trong khi quá trình thí nghiệm.</li>
-              <li>Sử dụng tai nghe để trải nghiệm tốt hơn.</li>
-            </ul>
+            <Text strong type="danger">
+              Xin lưu ý: Thứ tự các câu hỏi sau đây được sinh một cách ngẫu nhiên. Xin hãy
+              làm lại từ đầu trong trường hợp bạn phải reload lại trang này!
+            </Text>
           </Paragraph>
         </Paragraph>
       </blockquote>
