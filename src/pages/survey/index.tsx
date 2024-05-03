@@ -10,7 +10,7 @@ const SurveyPage: React.FC = () => {
     <>
       <PageTitle title="MOS experiments" subTitle="Synthetic speech quality assessment" />
       <ContentBody>
-        <Title level={4} style={{ textAlign: 'center' }}>
+        <Title level={2} style={{ textAlign: 'center' }}>
           MOS Survey
         </Title>
         <Instruction />
