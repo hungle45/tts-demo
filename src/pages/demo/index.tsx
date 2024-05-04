@@ -1,14 +1,21 @@
-import Paragraph from 'antd/es/typography/Paragraph';
-import Title from 'antd/es/typography/Title';
 import ContentBody from '../../components/ContentBody.tsx';
+import PageTitle from '../../components/PageTitle.tsx';
+import Abstract from './Abstract.tsx';
+import AudioSamples from './AudioSamples.tsx';
 
 const DemoPage: React.FC = () => {
   return (
     <>
-      <Title level={3}>Demo Page</Title>
+      <PageTitle
+        title="This is the thesis title"
+        subTitle="Nguyen Minh My - Le Nguyen Hung"
+      />
 
       <ContentBody>
-        <Paragraph>Coming soon...</Paragraph>
+        <Abstract />
+        <AudioSamples />
+        {/* <SeenSamples />
+        <UnSeenSamples /> */}
       </ContentBody>
     </>
   );
