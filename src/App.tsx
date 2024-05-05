@@ -4,7 +4,6 @@ import HeaderContentFooterLayout from './layouts/HeaderContentFooterLayout.tsx';
 import DemoPage from './pages/demo/index.tsx';
 import HomePage from './pages/home/index.tsx';
 import SurveyPage from './pages/survey/index.tsx';
-import SynthPage from './pages/synth/index.tsx';
 
 interface IPageProps {
   path: string;
@@ -13,11 +12,6 @@ interface IPageProps {
 }
 
 const PageConfig: IPageProps[] = [
-  {
-    path: WEB_PATH.SYNTH,
-    element: <SynthPage />,
-    isAccessible: true,
-  },
   {
     path: WEB_PATH.DEMO,
     element: <DemoPage />,

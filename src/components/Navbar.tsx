@@ -11,10 +11,6 @@ const items: MenuItem[] = [
     label: <Link to={WEB_PATH.HOME}>Home</Link>,
   },
   {
-    key: WEB_PATH.SYNTH,
-    label: <Link to={WEB_PATH.SYNTH}>Synthesizer</Link>,
-  },
-  {
     key: WEB_PATH.DEMO,
     label: <Link to={WEB_PATH.DEMO}>Demo</Link>,
   },
