@@ -8,7 +8,7 @@ const Instruction: React.FC = () => {
   const [language, setLanguage] = useState('vn');
 
   return (
-    <Paragraph>
+    <Paragraph style={{ textAlign: 'justify' }}>
       <blockquote>
         <Segmented
           style={{ marginBottom: 16 }}
@@ -59,7 +59,7 @@ const Instruction: React.FC = () => {
         </Paragraph>
         <Paragraph hidden={language != 'vn'}>
           <Paragraph>Cảm ơn bạn đã tham gia vào thí nghiệm của chúng tôi!</Paragraph>
-          <Paragraph>
+          <Paragraph style={{ textAlign: 'justify' }}>
             Trong thí nghiệm này, chúng tôi đã sử dụng máy tính để tổng hợp giọng nói của
             con người. Các tệp âm thanh sau đây chứa cả các bản ghi âm được thu âm từ
             người thật và âm thanh tổng hợp bởi model AI, mỗi câu đều có kèm theo phụ đều

@@ -7,7 +7,7 @@ const Abstract: React.FC = () => {
       <Title level={3} style={{ marginTop: 0 }}>
         Abstract
       </Title>
-      <Paragraph>
+      <Paragraph style={{ textAlign: 'justify' }}>
         Ut ex nulla laborum id minim eu in elit labore sint cillum dolore tempor elit.
         Ipsum esse irure dolore magna ut labore laboris excepteur et. Veniam fugiat
         excepteur ad ad laborum consequat aliquip velit ut. Non fugiat occaecat aliqua
