@@ -1,7 +1,8 @@
 import ContentBody from '../../components/ContentBody.tsx';
 import PageTitle from '../../components/PageTitle.tsx';
 import Abstract from './Abstract.tsx';
-import AudioSamples from './AudioSamples.tsx';
+import SeenSamples from './SeenSamples.tsx';
+import UnseenSamples from './UnseenSamples.tsx';
 
 const DemoPage: React.FC = () => {
   return (
@@ -13,9 +14,8 @@ const DemoPage: React.FC = () => {
 
       <ContentBody>
         <Abstract />
-        <AudioSamples />
-        {/* <SeenSamples />
-        <UnSeenSamples /> */}
+        <SeenSamples />
+        <UnseenSamples />
       </ContentBody>
     </>
   );
