@@ -1,4 +1,4 @@
-import testAudio from '../../assets/survey_audios/dgspeech/1.wav';
+import testAudio from '../../assets/survey_audios/dgspecch_80/1089.wav';
 import AudioSamples, { AudioTab } from './AudioSamples';
 
 const UnseenSamples: React.FC = () => {

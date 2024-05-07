@@ -47,7 +47,7 @@ const mapAudioAssets = () => {
   return audioMap;
 };
 
-const MosForm: React.FC = () => {
+const MosForm: React.FC<{ language: string }> = ({ language }) => {
   const audioMap = mapAudioAssets();
   const randomAudioKeys = shuffleArray(Object.keys(audioMap));
 
@@ -136,7 +136,7 @@ const MosForm: React.FC = () => {
         autoComplete="off"
       >
         <Form.Item
-          label="Username"
+          label="Nickname"
           name={USER_INFO_KEY.NAME}
           rules={[{ required: true, message: 'Please input your name!' }]}
         >
@@ -155,7 +155,14 @@ const MosForm: React.FC = () => {
         </Form.Item>
 
         {randomAudioKeys.map((audioKey, index) => {
-          return <AudioCard key={index} audioKey={index} audio={audioMap[audioKey]} />;
+          return (
+            <AudioCard
+              key={index}
+              audioKey={index}
+              audio={audioMap[audioKey]}
+              language={language}
+            />
+          );
         })}
 
         <Form.Item style={{ textAlign: 'center' }}>
