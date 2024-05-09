@@ -47,7 +47,7 @@ const mapAudioAssets = () => {
   return audioMap;
 };
 
-const MosForm: React.FC<{ language: string }> = ({ language }) => {
+const MosForm: React.FC = () => {
   const audioMap = mapAudioAssets();
   const randomAudioKeys = shuffleArray(Object.keys(audioMap));
 
@@ -155,14 +155,7 @@ const MosForm: React.FC<{ language: string }> = ({ language }) => {
         </Form.Item>
 
         {randomAudioKeys.map((audioKey, index) => {
-          return (
-            <AudioCard
-              key={index}
-              audioKey={index}
-              audio={audioMap[audioKey]}
-              language={language}
-            />
-          );
+          return <AudioCard key={index} audioKey={index} audio={audioMap[audioKey]} />;
         })}
 
         <Form.Item style={{ textAlign: 'center' }}>

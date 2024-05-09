@@ -1,12 +1,12 @@
 import { Segmented, Typography } from 'antd';
 import Paragraph from 'antd/es/typography/Paragraph';
+import { useState } from 'react';
 
 const { Text } = Typography;
 
-const Instruction: React.FC<{
-  language: string;
-  setLanguage: React.Dispatch<React.SetStateAction<string>>;
-}> = ({ language, setLanguage }) => {
+const Instruction: React.FC = () => {
+  const [language, setLanguage] = useState('vn');
+
   return (
     <Paragraph style={{ textAlign: 'justify' }}>
       <blockquote>
