@@ -82,7 +82,7 @@ export const surveyAudioAssets: SurveyAudioAssets = {
     '121.wav': {
       src: dgspeech_200_121,
       transcript:
-        'Those pretty wrongs that liberty commits,When I am sometime absent from thy heart, thy years full well befits, for still temptation follows where thou art',
+        'Those pretty wrongs that liberty commits,When I am sometime absent from thy heart, thy beauty, and thy years full well befits, for still temptation follows where thou art',
     },
     '237.wav': {
       src: dgspeech_200_237,
@@ -131,7 +131,7 @@ export const surveyAudioAssets: SurveyAudioAssets = {
     '121.wav': {
       src: fastspeech2_200_121,
       transcript:
-        'Those pretty wrongs that liberty commits,When I am sometime absent from thy heart, thy years full well befits, for still temptation follows where thou art',
+        'Those pretty wrongs that liberty commits,When I am sometime absent from thy heart, thy beauty, and thy years full well befits, for still temptation follows where thou art',
     },
     '237.wav': {
       src: fastspeech2_200_237,
@@ -180,7 +180,7 @@ export const surveyAudioAssets: SurveyAudioAssets = {
     '121.wav': {
       src: vocoder_121,
       transcript:
-        'Those pretty wrongs that liberty commits,When I am sometime absent from thy heart, thy years full well befits, for still temptation follows where thou art',
+        'Those pretty wrongs that liberty commits,When I am sometime absent from thy heart, thy beauty, and thy years full well befits, for still temptation follows where thou art',
     },
     '237.wav': {
       src: vocoder_237,
@@ -229,7 +229,7 @@ export const surveyAudioAssets: SurveyAudioAssets = {
     '121.wav': {
       src: dgspecch_80_121,
       transcript:
-        'Those pretty wrongs that liberty commits,When I am sometime absent from thy heart, thy years full well befits, for still temptation follows where thou art',
+        'Those pretty wrongs that liberty commits,When I am sometime absent from thy heart, thy beauty, and thy years full well befits, for still temptation follows where thou art',
     },
     '237.wav': {
       src: dgspecch_80_237,
@@ -278,7 +278,7 @@ export const surveyAudioAssets: SurveyAudioAssets = {
     '121.wav': {
       src: dgspeech_wo_glow_80_121,
       transcript:
-        'Those pretty wrongs that liberty commits,When I am sometime absent from thy heart, thy years full well befits, for still temptation follows where thou art',
+        'Those pretty wrongs that liberty commits,When I am sometime absent from thy heart, thy beauty, and thy years full well befits, for still temptation follows where thou art',
     },
     '237.wav': {
       src: dgspeech_wo_glow_80_237,
@@ -327,7 +327,7 @@ export const surveyAudioAssets: SurveyAudioAssets = {
     '121.wav': {
       src: dgspeech_wo_mixstyle_80_121,
       transcript:
-        'Those pretty wrongs that liberty commits,When I am sometime absent from thy heart, thy years full well befits, for still temptation follows where thou art',
+        'Those pretty wrongs that liberty commits,When I am sometime absent from thy heart, thy beauty, and thy years full well befits, for still temptation follows where thou art',
     },
     '237.wav': {
       src: dgspeech_wo_mixstyle_80_237,
