@@ -13,8 +13,11 @@ const HeaderContentFooterLayout: React.FC = () => {
       >
         <Outlet />
       </Content>
-      <Footer style={{ textAlign: 'center' }}>
-        Ant Design ©{new Date().getFullYear()} Created by Ant UED
+      <Footer style={{ textAlign: 'center', opacity: '0.4' }}>
+        <div style={{ marginBottom: '8px' }}>
+          Graduation Thesis 2024. Made with <span color="#fff">❤</span> by{' '}
+        </div>
+        <div>Le Nguyen Hung (2013360) - Nguyen Minh My (2013811)</div>
       </Footer>
     </Layout>
   );

@@ -52,7 +52,7 @@ const MosForm: React.FC = () => {
   const randomAudioKeys = shuffleArray(Object.keys(audioMap));
 
   const [api, contextHolder] = notification.useNotification();
-  const [formDisabled, setFormDisabled] = useState<boolean>(false);
+  const [formDisabled, setFormDisabled] = useState<boolean>(true);
   const [spinning, setSpinning] = useState<boolean>(false);
 
   const handleSubmitSuccess = () => {
