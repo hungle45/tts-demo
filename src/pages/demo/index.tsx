@@ -1,8 +1,8 @@
 import ContentBody from '../../components/ContentBody.tsx';
 import PageTitle from '../../components/PageTitle.tsx';
 import Abstract from './Abstract.tsx';
-import SeenSamples from './SeenSamples.tsx';
-import UnseenSamples from './UnseenSamples.tsx';
+import NonParallelSamples from './NonParallelSamples.tsx';
+import ParallelSamples from './ParallelSamples.tsx';
 
 const DemoPage: React.FC = () => {
   return (
@@ -14,8 +14,8 @@ const DemoPage: React.FC = () => {
 
       <ContentBody>
         <Abstract />
-        <SeenSamples />
-        <UnseenSamples />
+        <ParallelSamples />
+        <NonParallelSamples />
       </ContentBody>
     </>
   );

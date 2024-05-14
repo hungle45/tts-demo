@@ -7,11 +7,13 @@ const { Text } = Typography;
 
 export interface AudioTab {
   label: string;
-  transcript: string;
   headers: string[];
-  rows: {
-    speakerId: string;
-    audios: string[];
+  data: {
+    transcript: string;
+    rows: {
+      speakerId: string;
+      audios: string[];
+    }[];
   }[];
 }
 
@@ -31,47 +33,51 @@ const AudioSamples: React.FC<{
       <Tabs
         type="card"
         size="middle"
-        items={audioTabs.map(({ label, transcript, headers, rows }, tabKey) => ({
+        items={audioTabs.map(({ label, headers, data }, tabKey) => ({
           label: label,
           key: tabKey.toString(),
           children: (
             <>
-              Transcript:{' '}
-              <Text italic style={{ textAlign: 'justify' }}>
-                {transcript}
-              </Text>
-              <table className="comparison-table">
-                <thead>
-                  <tr>
-                    {headers.map((header, key) => (
-                      <th key={key}>{header}</th>
-                    ))}
-                  </tr>
-                </thead>
-
-                <tbody>
-                  {rows.map(({ speakerId, audios }, key) => {
-                    return (
-                      <tr key={key}>
-                        {audios.map((audio, key) => (
-                          <td key={key}>
-                            <div style={{ opacity: key === 0 ? 1 : 0 }}>
-                              <i>{speakerId}</i>
-                            </div>
-                            <audio
-                              controls
-                              controlsList="noplaybackrate nodownload"
-                              className="audio-player"
-                              preload="metadata"
-                              src={audio}
-                            ></audio>
-                          </td>
+              {data.map(({ transcript, rows }, dataKey) => (
+                <div key={dataKey} style={{ marginBottom: '32px' }}>
+                  Transcript:{' '}
+                  <Text italic style={{ textAlign: 'justify' }}>
+                    {transcript}
+                  </Text>
+                  <table className="comparison-table">
+                    <thead>
+                      <tr>
+                        {headers.map((header, key) => (
+                          <th key={key}>{header}</th>
                         ))}
                       </tr>
-                    );
-                  })}
-                </tbody>
-              </table>
+                    </thead>
+
+                    <tbody>
+                      {rows.map(({ speakerId, audios }, key) => {
+                        return (
+                          <tr key={key}>
+                            {audios.map((audio, key) => (
+                              <td key={key}>
+                                <div style={{ opacity: key === 0 ? 1 : 0 }}>
+                                  <i>{speakerId}</i>
+                                </div>
+                                <audio
+                                  controls
+                                  controlsList="noplaybackrate nodownload"
+                                  className="audio-player"
+                                  preload="metadata"
+                                  src={audio}
+                                ></audio>
+                              </td>
+                            ))}
+                          </tr>
+                        );
+                      })}
+                    </tbody>
+                  </table>
+                </div>
+              ))}
             </>
           ),
         }))}
