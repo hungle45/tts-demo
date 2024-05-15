@@ -9,7 +9,7 @@ const DemoPage: React.FC = () => {
     <>
       <PageTitle
         title="This is the thesis title"
-        subTitle="Nguyen Minh My - Le Nguyen Hung"
+        subTitle="Author: Nguyen Minh My, Le Nguyen Hung"
       />
 
       <ContentBody>

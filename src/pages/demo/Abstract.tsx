@@ -1,5 +1,7 @@
+import { Image } from 'antd';
 import Paragraph from 'antd/es/typography/Paragraph';
 import Title from 'antd/es/typography/Title';
+import dgspeech from '../../assets/DGSpeech.png';
 
 const Abstract: React.FC = () => {
   return (
@@ -7,6 +9,12 @@ const Abstract: React.FC = () => {
       <Title level={3} style={{ marginTop: 0 }}>
         Abstract
       </Title>
+
+      <div
+        style={{ width: '100%', maxWidth: '840px', margin: 'auto', marginBottom: '8px' }}
+      >
+        <Image width={'100%'} src={dgspeech} style={{ padding: '8px 24px 12px' }} />
+      </div>
       <Paragraph style={{ textAlign: 'justify' }}>
         Ut ex nulla laborum id minim eu in elit labore sint cillum dolore tempor elit.
         Ipsum esse irure dolore magna ut labore laboris excepteur et. Veniam fugiat

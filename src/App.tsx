@@ -2,7 +2,6 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { BASE_PATH, WEB_PATH } from './constants/PathConstant.tsx';
 import HeaderContentFooterLayout from './layouts/HeaderContentFooterLayout.tsx';
 import DemoPage from './pages/demo/index.tsx';
-import HomePage from './pages/home/index.tsx';
 import SurveyPage from './pages/survey/index.tsx';
 
 interface IPageProps {
@@ -20,11 +19,6 @@ const PageConfig: IPageProps[] = [
   {
     path: WEB_PATH.SURVEY,
     element: <SurveyPage />,
-    isAccessible: true,
-  },
-  {
-    path: WEB_PATH.HOME,
-    element: <HomePage />,
     isAccessible: true,
   },
 ];
