@@ -8,7 +8,7 @@ const DemoPage: React.FC = () => {
   return (
     <>
       <PageTitle
-        title="Voice Clonning"
+        title="Voice Cloning"
         subTitle="Author: Nguyen Minh My, Le Nguyen Hung"
       />
 
