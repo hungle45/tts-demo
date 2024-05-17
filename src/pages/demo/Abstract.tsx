@@ -16,16 +16,24 @@ const Abstract: React.FC = () => {
         <Image width={'100%'} src={dgspeech} style={{ padding: '8px 24px 12px' }} />
       </div>
       <Paragraph style={{ textAlign: 'justify' }}>
-        Ut ex nulla laborum id minim eu in elit labore sint cillum dolore tempor elit.
-        Ipsum esse irure dolore magna ut labore laboris excepteur et. Veniam fugiat
-        excepteur ad ad laborum consequat aliquip velit ut. Non fugiat occaecat aliqua
-        dolore do minim sint occaecat eiusmod excepteur magna irure laborum quis. Id quis
-        esse amet deserunt velit amet. Dolor laborum non deserunt cupidatat voluptate amet
-        velit magna non voluptate id. Dolore ea ad in fugiat minim voluptate eiusmod
-        occaecat cillum culpa eiusmod nulla. Consectetur labore minim esse deserunt duis
-        laboris officia duis et labore veniam. Occaecat amet velit consequat incididunt
-        excepteur anim dolor. Ullamco duis magna commodo nisi ipsum eu ad occaecat dolore
-        pariatur. Consequat eu aliquip aliqua commodo.
+        The demand for Text-To-Speech (TTS) technology is increasing with the advancement
+        of artificial intelligence. To meet the current needs, lots of research and
+        experimentation have been conducted to enhance TTS capabilities, resulting in the
+        development of a baseline model showcasing substantial proficiency in converting
+        text to speech. However, challenges remain in the domain of voice cloning, where
+        generated voices often lack fidelity to the originals and zero-shot learning
+        methods have shown limited effectiveness with unseen datasets. To address these
+        challenges, this project introduces DGSpeech, which is built on the FastSpeech2
+        architecture. DGSpeech incorporates mix-style layer normalization and flow-based
+        post-net enhancements to improve voice cloning performance. Experimental
+        evaluations compare DGSpeech with the baseline technique, which relies on
+        FastSpeech2. Results indicate that DGSpeech achieves a Mean Opinion Score (MOS) of
+        3.71, surpassing the baseline technique's MOS of 3.37 in terms of naturalness.
+        However, DGSpeech exhibits a slightly lower performance in Word Error Rate (WER)
+        compared to the baseline. Further analysis reveals that DGSpeech generally
+        outperforms the baseline model in cosine similarity metrics, particularly among
+        speakers included in the training data. Nonetheless, challenges remain with unseen
+        speakers, highlighting opportunities for future research and refinement.
       </Paragraph>
     </>
   );
